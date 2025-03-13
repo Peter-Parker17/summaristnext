@@ -6,6 +6,9 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.ul}>
+        <Link href="/">
+          <li>Home</li>
+        </Link>
         <Link href="/login">
           <li>Login</li>
         </Link>
@@ -15,7 +18,10 @@ export default function Navbar() {
         <Link href="/contact">
         <li>Contact</li>
         </Link>
+        <Link href="/help">
         <li>Help</li>
+        </Link>
+        <input placeholder="Search..." type="text"></input>
       </ul>
     </nav>
   );

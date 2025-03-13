@@ -1,5 +1,11 @@
-import '../src/app/assets/styles.css'
+import Navbar from "../components/Navbar";
+import "../src/app/assets/styles.css";
 
-export default function App({ Component, pageProps }){
-    return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  );
 }
